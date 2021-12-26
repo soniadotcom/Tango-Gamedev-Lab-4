@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     public float moveSpeed = 5f;
 
     public Rigidbody2D rb;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousePosition;
+
 
     // Update is called once per frame
     void Update()
@@ -30,5 +32,4 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
     }
-
 }

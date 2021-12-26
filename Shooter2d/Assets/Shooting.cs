@@ -17,7 +17,7 @@ public class Shooting : MonoBehaviour
         {
             Shoot();
         }
-        
+
     }
 
     void Shoot()
